@@ -103,7 +103,7 @@ public class DesignerController {
         ModelAndView mv = new ModelAndView();
 
         if (session != null) {
-            session.setMaxInactiveInterval(5); 
+            session.setMaxInactiveInterval(7200); 
         }
         if (session == null || session.getAttribute("designer") == null) {
             mv.setViewName("designerlogin");
